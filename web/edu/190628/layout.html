@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>layout</title>
+	<style>
+		/* Reset */
+		*{
+			margin: 0;
+			padding: 0;
+			color: black;
+			font-size:13px;
+			box-sizing: border-box; 
+		}
+		body{
+			padding: 15px;
+			text-align: center;
+
+		}
+		/* header */
+		.header{
+			position: relative;
+			width: 800px;
+			margin: 0 auto;
+			padding: 40px 15px 15px;
+			background-color:rosybrown;
+		}
+
+	.header span{
+		position: absolute;
+		top:20px;
+		left: 50%;
+		/* transform: translateX(-50%); */
+	}
+		/* nav */
+		.nav{
+			padding: 20px;
+			background-color: aquamarine;
+		}
+
+		.footer{
+			/* clear: both; */
+			/* position: relative;
+			width: 800px;
+			margin: 300px auto;
+			padding: 100px 15px 15px;
+			background-color:pink; */
+			padding: 20px;
+			width: 800px;
+			margin:0 auto;
+			text-align: center;
+			background-color: coral;
+		}
+		/* main */
+		.main{
+			width: 800px;
+			margin: 10px auto;
+		}
+		.main::after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+
+		/* main>sidemenu */
+		.sidemenu{
+			float: left;
+			width: 150px;
+			/* margin-right: 100%; */
+			padding: 15px;
+			background-color: cornflowerblue;
+		}
+		/* main > sidemeun > haeder */
+		.sidemenu header{
+			padding: 40px 0;
+			background-color: aqua;
+		}
+
+		/* main > sidemenu > nav */
+		.sidemenu nav{
+			min-height: 150px;
+			margin-top: 20px;
+			padding: 20px;
+			background-color: brown;
+		}
+		/* main>csection */
+		.csection{
+			margin-left: 160px;
+			padding: 15px;
+			background-color: cornflowerblue;
+		}
+		/* main > csection > haeder */
+		.csection header{
+			padding: 40px 0;
+			background-color: aqua;
+	}
+
+		/* main > csection > article */
+		.csection article{
+			min-height: 150px;
+			margin-top: 20px;
+			padding: 20px;
+			background-color:teal;
+	}
+
+
+	</style>
+
+</head>
+<body>
+	<header class="header">
+		<span>header</span>
+		<nav class="nav">
+			nav
+		</nav>
+		<!-- //nav -->
+	</header>
+	<!-- //header -->
+	<main class="main">
+		<section class="sidemenu">
+			<header>header</header>
+			<nav>nav</nav>
+		</section>
+		<!-- sidemeun -->
+		<section class="csection">
+			<header>header</header>
+			<article>article</article>
+		</section>
+	</main>	
+	<!-- //main -->
+	<footer class="footer">
+	footer
+	</footer>
+	<!-- //footer -->
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>form 요소</title>
+</head>
+<body>
+	<!-- 
+
+form
+fieldset :영역구분
+legend :
+
+input
+select : 지역이나 제목 전화번호 
+option (ul/li)
+textarea: 부가정보 댓글 긴문장쓸때  ex)50자 한정
+
+
+input type속성
+text
+password
+checkbox
+radio
+hidden
+buttom : 전송
+submit : 전송
+reset
+image
+label
+
+search
+url
+date
+week
+year
+month
+email
+telephone
+
+
+get post (보임 안보임)
+readonly 색상이 변함
+disabled 수정안됨
+placeholder
+
+cols 60~70 (가로)
+rows 7~9(세로)
+	 -->
+
+<form method="post" action="https://www.naver.com/">
+<fieldset>
+	<legend>폼요소 제목</legend>
+	<input type="text" name="" placeholder="아이디를 입력해주세요" value="">
+	<input type="password" name="" placeholder="패스워드를 입력해주세요" value="">
+	<input type="checkbox" name="" id="chk1"> <label for="chk1">html</label> 
+	<input type="checkbox" name="" id="chk2"> <label for="chk2">css</label>
+	<input type="radio" name="rad" id="rad1"> <label for="rad1">html</label>
+	<input type="radio" name="rad" id="rad2"> <label for="rad2">css</label>
+
+
+	<label>
+		<input type="checkbox" name="">
+		<span>html</span>
+	</label> 
+	<label>
+		<input type="checkbox" name="">
+		<span>css</span>
+	</label>
+	<label>
+		<input type="radio" name="rad">
+		<span>html</span>
+	</label>
+	<label>
+		<input type="radio" name="rad">
+		<span>css</span>
+	</label>
+
+	<input type="button"	value="확인" class="btn btn-confirm">
+	<input type="submit"	value="전송" class="btn btn-submit">
+	<input type="image"	src="" alt="확인" class="btn btn-confirm">
+	<input type="reset"	value="초기화" class="btn btn-reset">
+	<input type="hidden"	value="">
+
+	<button class="btn">전송</button>
+	<a href="#" class="btn">전송</a>
+	<label>
+		<select name="" id="">
+			<option>선택</option>
+			<option selected>010</option>
+		</select>
+	</label>
+
+	<label for="">
+		<textarea cols="75" rows="7" placeholder="내용을 입력해주세요"></textarea>
+	</label>
+
+	<label>
+		<input type="email" name="">
+	</label> 
+	<label>
+		<input type="url" name="">
+	</label> 
+	<label>
+		<input type="year" name="">
+	</label> 
+	<label>
+		<input type="week" name="">
+	</label> 
+	<label>
+		<input type="month" name="">
+	</label> 
+	<label>
+		<input type="number" name="">
+	</label> 
+
+	<label>
+			<select name="" id="">
+				<option>선택</option>
+				<optgroup label="서울특별시">
+					<option>서초구</option>
+					<option>관악구</option>
+					<option>구로구</option>
+				</optgroup>
+				<optgroup label="부산광역시">
+						<option>해운대구</option>
+						<option>동래구</option>
+						<option>사하구</option>
+					</optgroup>
+			</select>
+		</label>
+
+
+</fieldset>
+</form>
+
+<form action="">
+	<input type="hidden">
+</form>
+
+</body>
+
+
+
+</html>
