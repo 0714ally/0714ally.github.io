@@ -395,8 +395,45 @@ body{
 		float:none;
 	}
 }
-@media (max-width:480px){
-	/* header */
-	/* main */
-	/* footer */
+@media (max-width:481px){
+
+}
+@media (max-width:371px){
+	.main .portfolio{
+		margin-bottom:10px;
+	}
+	.main .html5{
+		width:100%;
+		height: 50vw;
+		margin-bottom:10px;
+	}
+	.main .css3{
+		width:100%;
+		height: 50vw;
+		margin-bottom:10px;
+	}
+	.main .less{
+		width:100%;
+		height: 50vw;
+		margin-right:0;
+		margin-bottom:10px;
+	}
+	.main .js{
+		width:100%;
+		height: 50vw;
+		margin-right:0;
+		margin-bottom:10px;
+	}
+	.main .svn{
+		clear:both;
+		width:100%;
+		height:50vw;
+		margin-right:0;
+	}
+	.main .git{
+		float:right;
+		width:100%;
+		height:50vw;
+		margin-right:0;
+	}
 }
