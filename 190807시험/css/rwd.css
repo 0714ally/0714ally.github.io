@@ -398,7 +398,7 @@ body{
 @media (max-width:481px){
 
 }
-@media (min-width:359px){
+/* @media (min-width:359px){
 	.main .portfolio{
 		margin-bottom:10px;
 	}
@@ -436,4 +436,4 @@ body{
 		height:50vw;
 		margin-right:0;
 	}
-}
+} */
