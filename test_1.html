@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+	*{margin:0;padding: 0;box-sizing: border-box;	}
+	header{height: 150px;border: 1px solid #000;}
+	main{height: 15px;border: 1px solid #000;}
+	section{height: 800px;}
+	footer{ height: 80px; border: 1px solid #f5f5f5;}
+	.skipnav{position: absolute;top:0;left: 0;width: 100%;}
+	.skipnav a{display: block; position: relative; top:-10px; width: 100%; height: 1px; line-height: 1px; background-color: #000; padding:0; color:#fff; text-align: center;	}
+	.skipnav a:focus{height: auto; top:0; line-height: 1; background-color: #000; padding:10px; color:#fff;}
+	.iframe{
+		width: 800px;
+		height: 800px;
+	}
+
+	</style>
+
+</head>
+<body>
+	<div class="skipnav">
+		<a href="#cTitle">본문 내용 바로가기</a>
+	</div>
+	<div class="wrap">
+		<header></header>
+		<main>	
+			<section>
+				<h2 id="cTitle">본문내용</h2>
+				<div class="iframe">
+					<iframe src="http://www.petitbidet.com" frameborder="0" title="쁘띠비데 비데 물티슈 메인"></iframe>
+				</div>
+
+			</section>
+		</main>
+		<footer>
+
+		</footer>
+	</div>
+</body>
+</html>
